@@ -1,0 +1,23 @@
+.lista-cursos {
+    display: inline-block;
+}
+
+.lista-cursos__item {
+    margin: 50px;
+    width: 250px;
+    height: 110px;
+    overflow: hidden;
+}
+
+.lista-cursos img {
+    /* width: 340px; */
+    width: 250px;
+    margin-left: -50%;
+    cursor: pointer;
+    transform: scale(.95);
+    transition: .5s;
+}
+
+.lista-cursos img:hover {
+    transform: scale(1);
+}

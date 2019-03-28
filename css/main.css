@@ -1,4 +1,8 @@
 /* RESET */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -18,36 +22,36 @@ body {
     height: 80px;
     background: url('../images/logo.png');
     background-size: cover;
-    /* https://drive.google.com/drive/folders/1DX5xqVQnX9j23ZxZVJW-dFyLDRigeCJv */
 }
 
 
 /* MENU */
 .menu {
     position: relative;
+    background: #f96938;
 }
 
 .menu ul {
     display: flex;
     margin: 0;
-    background: #666;
 }
 .menu__item {
     padding: 5px 0;
     list-style: none;
-    /* text-transform: uppercase; */
 }
 .menu__item a {
     display: block;
-    /* padding: 5px 10px; */
     padding: 5px 15px;
-    /* border-left: 1px solid #777; */
-    /* font-size: 12px; */
     font-size: 14px;
     text-align: center;
     text-decoration: none;
     color: #eee;
     transition: .5s;
+    border-bottom: 1px solid #f96938;
+}
+
+.menu__item a:hover {
+    border-bottom: 1px solid #fff;
 }
 
 .menu__btn-login {
@@ -71,14 +75,30 @@ body {
 }
 
 .menu__btn-login:hover {
-    border-color: #666;
+    border-color: #f96938;
     background-color: #ddd;
-    color: #666;
+    color: #f96938;
+}
+
+.title {
+    color: #f96938;
+}
+
+/* CONTENT */
+.content {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 50px auto;
+    max-width: 960px;
+}
+
+.content--home {
+    margin: 150px auto;
 }
 
 /* FOOTER */
 .footer {
-    background: #666;
+    background: #f96938;
 }
 .footer p {
     padding: 15px 0;
